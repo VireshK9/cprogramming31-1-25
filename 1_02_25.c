@@ -162,3 +162,19 @@ int main() {
         printf("The char is consonent");
     }
 }
+
+//Check weather if user can vote or not on the basis of age 
+#include <stdio.h>
+
+int main() {
+    int age;
+    printf("Enter your age : ");
+    scanf("%d",&age);
+    
+    if(age>=18){
+        printf("You can vote");
+    }
+    else{
+        printf("You cannot vote");
+    }
+}
