@@ -178,3 +178,82 @@ int main() {
         printf("You cannot vote");
     }
 }
+
+//11/02/25
+
+//if/else if/ese
+
+#include <stdio.h>
+
+int main() {
+    //if/else if/else - if/else ladder
+    int age;
+    printf("Enter your age :- ");
+    scanf("%d",&age);
+    
+    if(age>=45){
+        printf("You have to pay Rs.600");
+    }
+    else if(age>=18){
+        printf("You have to pay Rs.400");
+    }
+    else if(age>=12){
+        printf("You have to pay Rs.200");
+    }
+    else{
+        printf("You have to pay Rs.100");
+    }
+}
+
+//12/02/25
+
+#include <stdio.h>
+
+int main() {
+    //multiple if statement
+    int age;
+    printf("Enter your age ");
+    scanf("%d",&age);
+    
+    if(age>=45){
+        printf("You have to Pay Rs.600\n");
+    }
+    if(age>=18){
+        printf("You have to Pay Rs.400\n");
+    }
+    if(age>=12){
+        printf("You have to Pay Rs.200\n");
+    }
+    if(age<12){
+        printf("You have to Pay Rs.100\n");
+    }
+}
+
+
+//nested if/else
+#include <stdio.h>
+
+int main() {
+
+    int age;
+    printf("Enter your age : ");
+    scanf("%d",&age);
+    
+    if(age>=18){
+        int choice;
+        printf("Do you want a costume?\n1.Yes\n2.No");
+        scanf("%d",&choice);
+        if(choice==1){
+            printf("You have to pay Rs.800\nRs600 - Ticket Price\nRs.200 - Costume Price");
+        }
+        else{
+            printf("You have to pay Rs.600\nRs600 - Ticket Price\nRs.0 - Costume Price");
+        }
+    }
+    else if(age>=12){
+        printf("You have to pay Rs.400");
+    }
+    else{
+        printf("You have to pay Rs.200");
+    }
+}
