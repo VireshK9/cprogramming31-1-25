@@ -257,3 +257,89 @@ int main() {
         printf("You have to pay Rs.200");
     }
 }
+
+//13/02/25
+
+//for loop
+#include <stdio.h>
+
+int main() {
+    
+    // for(expression 1; expression 2; expression 3){
+        //block of code
+    // }
+    
+    for(int i=1;i<=10;i++){
+        printf("%d\n",i);
+    }
+    
+}
+
+//Printing a 2 table using for loop
+#include <stdio.h>
+
+int main() {
+    
+    for(int i=1;i<=10;i++){
+        printf("2 * %d = %d\n",i,i*2);
+    }
+    
+}
+
+//Right angle triangle
+#include <stdio.h>
+
+int main() {
+    
+    int n = 5;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            printf("* ");
+        }
+        printf("\n");
+    }
+    
+}
+
+//Functions in C
+
+#include <stdio.h>
+
+int getBook(int money){
+    printf("GO to the book store\n");
+    printf("Purchase a book\n");
+    int num_books = money/40;
+    int remaining_money = money - (num_books*40);
+    printf("I have purchased %d books and remaining Rs.%d\n",num_books,remaining_money);
+}
+
+int main() {
+    getBook(100);
+    getBook(350);
+}
+
+//Recursion
+#include <stdio.h>
+
+int getBook(int money){
+    printf("GO to the book store\n");
+    printf("Purchase a book\n");
+    int num_books = money/40;
+    int remaining_money = money - (num_books*40);
+    printf("I have purchased %d books and remaining Rs.%d\n",num_books,remaining_money);
+}
+
+int main() {
+    getBook(100);
+    getBook(350);
+}
+
+//Math Function
+#include<stdio.h>
+#include<math.h>
+int main() {
+    printf("%f\n",sqrt(16));
+    printf("%f\n",ceil(1.4)); //round of to next integer
+    printf("%f\n",floor(1.4));//round of to previous integer
+    printf("%f\n",pow(4,3));
+}
