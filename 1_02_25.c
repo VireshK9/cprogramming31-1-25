@@ -343,3 +343,25 @@ int main() {
     printf("%f\n",floor(1.4));//round of to previous integer
     printf("%f\n",pow(4,3));
 }
+
+//27/02/25
+
+//Array
+#include <stdio.h>
+
+int main() {
+    //1d Array
+    // int a[] = {23,76,54,98,10,20,47,4};
+    char b[] = {'a','b','c','d','e','f'};
+    for(int i=0;i<6;i++){
+        printf("%c ",b[i]);
+    }
+    
+    // printf("%d",a[1]);
+    
+    // for(int i=0;i<8;i++){
+    //     printf("%d ",a[i]);
+    // }
+}
+
+//2d Array
