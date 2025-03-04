@@ -365,3 +365,64 @@ int main() {
 }
 
 //2d Array
+//3d Array
+
+//04/03/25
+
+//Switch statement
+#include <stdio.h>
+
+int main() {
+    int day;
+    printf("Enter the num of day : ");
+    scanf("%d",&day);
+    
+    switch(day){
+        case 1:
+            printf("Today is Monday");
+            break;
+        case 2:
+            printf("Today is Tuesday");
+            break;
+        case 3:
+            printf("Today is Wednesday");
+            break;
+        case 4:
+            printf("Today is Thuresday");
+            break;
+        case 5:
+            printf("Today is Friday");
+            break;
+        case 6:
+            printf("Today is Satuerday");
+            break;
+        case 7:
+            printf("Today is Sunday");
+            break;
+        default:
+            printf("Invalid Day No");
+            break;
+    }
+}
+
+//goto statement
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("Enter a num : ");
+    scanf("%d",&num);
+    
+    if(num%2==0){
+        goto even;
+    }
+    else{
+        goto odd;
+    }
+    
+    even:
+        printf("Number is even");
+        return 0;
+    odd:
+        printf("Number is odd");
+}
